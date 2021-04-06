@@ -1,0 +1,110 @@
+html {
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
+    max-width: 1440px;
+    overflow-x:hidden;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    /* width: 100%; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.hero {
+    /* background-image: url("../images/image-hero-desktop.jpg");
+    width: 100%;
+    height: 400px;
+    top: 0;
+    -moz-box-shadow:    inset 0 0 100px #000000;
+    -webkit-box-shadow: inset 0 0 100px #000000;
+    box-shadow:         inset 0 0 100px #000000; */
+    
+}
+
+/* .himg {
+    width: 100%;
+} */
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    margin-top: 30%;
+}
+
+.container {
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 20px 25px;
+    background-color: hsl(176, 50%, 47%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 700;
+    outline: none;
+}
+
+button:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+.top-container {
+    margin-top: 35vh;
+    /* flex-direction: column; */
+}
+
+.top-container button:last-child {
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+    background: hsl(0, 0%, 83%) url("../images/icon-bookmark.svg");
+    background-repeat: no-repeat;
+    padding-left: 70px;
+    color: hsl(0, 0%, 51%) ;
+    transition: all 0.3s ease 0s;
+}
+
+.top-container button:last-child:focus {
+    color: hsl(176, 72%, 28%);
+    /* NEED JS */
+}
+
+.top-container button:last-child {
+    margin-left: auto;
+}
+/* 
+.top-container button:first-child {
+    margin-right: auto;
+} */
+
+.top-container p {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.logo-mastercraft {
+    top: 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
