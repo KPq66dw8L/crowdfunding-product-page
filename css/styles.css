@@ -10,26 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f6f6f6;
-    /* width: 100%; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
-
-.hero {
-    /* background-image: url("../images/image-hero-desktop.jpg");
-    width: 100%;
-    height: 400px;
-    top: 0;
-    -moz-box-shadow:    inset 0 0 100px #000000;
-    -webkit-box-shadow: inset 0 0 100px #000000;
-    box-shadow:         inset 0 0 100px #000000; */
-    
-}
-
-/* .himg {
-    width: 100%;
-} */
 
 .grid {
     display: grid;
@@ -45,7 +26,6 @@ body {
     max-width: 70vh;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-wrap: wrap;
     background-color: white;
     padding: 30px;
@@ -70,12 +50,9 @@ button:hover {
 
 .top-container {
     margin-top: 35vh;
-    /* flex-direction: column; */
 }
 
 .top-container button:last-child {
-    /* display: flex;
-    align-items: center; */
     text-align: center;
     background: hsl(0, 0%, 83%) url("../images/icon-bookmark.svg");
     background-repeat: no-repeat;
@@ -92,10 +69,6 @@ button:hover {
 .top-container button:last-child {
     margin-left: auto;
 }
-/* 
-.top-container button:first-child {
-    margin-right: auto;
-} */
 
 .top-container p {
     margin-top: 0;
