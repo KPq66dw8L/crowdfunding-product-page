@@ -289,9 +289,9 @@ button:hover {
 }
 
 .btn:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
+    /* color: #333; */
+    /* background-color: #e6e6e6; */
+    border-color: hsl(176, 50%, 47%);
 }
 
 .btn:last-child {
@@ -348,10 +348,9 @@ button:hover {
     background-color: white;
 }
 
-/* .pladge button {
-    height: 45px;
-} */
-
+.input[radio] {
+    border: 0;
+}
 
 .attribution {
     font-size: 11px;
