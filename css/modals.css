@@ -1,0 +1,178 @@
+
+
+.back-the-project {
+    display: grid;
+    grid-template-rows: 5;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+.back-the-project:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* .back-the-project > div {
+    width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+} */
+
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: black;
+}
+
+
+
+
+
+.btn span {
+    margin-right: auto;
+    margin-left: 2vh;
+}
+
+.btn h2 {
+    margin-right: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    border: solid 2px rgb(238, 238, 238);
+    border-radius: 10px;
+    margin: 2vh 3vh 2vh 3vh;
+    padding: 2vh 3vh;
+
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.btn:hover {
+    /* color: #333; */
+    /* background-color: #e6e6e6; */
+    border-color: hsl(176, 50%, 47%);
+}
+
+.btn:last-child {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* .pledge button {
+    margin-left: auto;
+} */
+
+.pledge {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border-top: solid 2px #e6e6e6;
+    padding-top: 10px;
+}
+
+.botRight {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 7vh;
+}
+
+
+.putput {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.donation {
+    background-color: white;
+    border: solid hsl(176, 50%, 47%);
+    padding: 0;
+    font-size: 20px;
+    display: flex;
+    color: hsl(0, 0%, 48%);
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 10px;
+    margin-right: 5px;
+
+    height: 55px;
+}
+
+.donation:hover {
+    background-color: white;
+}
+
+input[type=radio] {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: -15px;
+    /* FOR THE COLOR: CREATE OWN CUSTOM TOOLKIT: https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons */
+}
+
+/* THANK YOU FOR YOU SUPPORT MSG */
+
+.modal-completed {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.modal-completed:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}

@@ -11,6 +11,7 @@
   <!-- CSS STYLESHEETS -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/modals.css">
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
@@ -41,12 +42,14 @@
       <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
 
 
-      <button>Back this project</button>
+
+        <a class="btn-reward" href="#open-modal1">Back this project</a>
       <!-- <a href="#" class="bookmark">Bookmark</a> -->
       <!-- https://stackoverflow.com/questions/13630229/can-i-have-an-onclick-effect-in-css -->
       
       <input type="checkbox" id="btnControl"/>
       <label class="bookmark" for="btnControl"> <p>Bookmark</p> </label>
+
 
     </div>
 
@@ -91,7 +94,7 @@
             you’ll be added to a special Backer member list.</p>
           <h2>101</h2>
           <p>left</p>
-          <button class="btn-reward">Select Reward</button>
+          <a class="btn-reward" href="#open-modal1">Select Reward</a>
         </div>
 
         <div class="rew reward2">
@@ -101,7 +104,7 @@
             member list. Shipping is included.</p>
           <h2>64</h2>
           <p>left</p>
-          <button class="btn-reward">Select Reward</button>
+          <a class="btn-reward" href="#open-modal1">Select Reward</a>
         </div>
 
         <div class="rew reward3">
@@ -111,7 +114,7 @@
             to our Backer member list. Shipping is included.</p>
           <h2>0</h2>
           <p>left</p>
-          <button class="btn-reward">Out of Stock</button>
+          <a class="btn-reward">Out of Stock</a>
         </div>
 
       </div>
@@ -121,7 +124,8 @@
   <!-- https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_target_modal -->
   <!-- Selection modal start -->
 
-  <div class="container back-the-project">
+  <div class="container back-the-project" id="open-modal1">
+    <a href="#" title="Close" class="modal-close">X</a>
     <h2>Back this project</h2>
     <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
@@ -151,7 +155,7 @@
               <p>$</p><input type="number" value="25">
             </button>
           </div>
-          <button>Continue</button>
+          <a class="btn-reward" href="#open-modal2">Continue</a>
         </div>
       </div>
     </div>
@@ -176,7 +180,7 @@
               <p>$</p><input type="number" value="75">
             </button>
           </div>
-          <button>Continue</button>
+          <a class="btn-reward" href="#open-modal2">Continue</a>
         </div>
       </div>
     </div>
@@ -202,7 +206,7 @@
               <p>$</p><input type="number" value="200">
             </button>
           </div>
-          <button>Continue</button>
+          <a class="btn-reward" href="#open-modal2">Continue</a>
         </div>
       </div>
     </div>
@@ -213,12 +217,13 @@
 
   <!-- Success modal start -->
 
-  <div class="container modal-completed">
+  <div class="container modal-completed" id="open-modal2">
+    <a href="#" title="Close" class="modal-close">X</a>
     <img src="images/icon-check.svg" alt="">
     <h2>Thanks for your support!</h2>
     <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
       an email once our campaign is completed.</p>
-    <button>Got it!</button>
+    <a class="btn-reward" href="#">Got it!</a>
   </div>
 
   <!-- Success modal end -->
